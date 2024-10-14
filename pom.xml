@@ -321,7 +321,7 @@
 		      <plugin>
         <groupId>org.sonarsource.scanner.maven</groupId>
         <artifactId>sonar-maven-plugin</artifactId>
-        <version>3.9.1.2184</version> <!-- Example version compatible with Java 11 -->
+        <version>3.9.0.2155</version> <!-- Example version compatible with Java 11 -->
       </plugin>
 				<!--This plugin's configuration is used to store Eclipse m2e settings 
 					only. It has no influence on the Maven build itself. -->
