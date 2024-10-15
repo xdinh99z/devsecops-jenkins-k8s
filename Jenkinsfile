@@ -6,12 +6,12 @@ pipeline {
   stages{
     stage('Build') {
           steps {
-              sh 'maven install'
+              sh 'mvn install'
           }
       }
       stage('Test') {
           steps {
-              sh 'maven test'
+              sh 'mvn test'
             }
       }
       stage('CompileandRunSonarAnalysis') {
