@@ -6,17 +6,14 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                withMaven(maven: 'Maven') {
-                    sh 'mvn --version'
-                    sh 'mvn clean install'
-                }
+                sh 'mvn --version'
+                sh 'mvn clean install'
             }
         }
+  
         stage('Test') {
             steps {
-                withMaven(maven: 'Maven') {
-                    sh 'mvn test'
-                }
+                sh 'mvn test'
             }
         }
         stage('CompileandRunSonarAnalysis') {
